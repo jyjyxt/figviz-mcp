@@ -1,0 +1,52 @@
+{
+  "name": "figviz-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Figviz — generate labeled science & math diagrams (biology, chemistry, physics, K-12 math) from text via the Figviz API.",
+  "type": "module",
+  "bin": {
+    "figviz-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "figviz",
+    "diagram",
+    "diagram-generator",
+    "science",
+    "education",
+    "ai",
+    "claude",
+    "cursor"
+  ],
+  "license": "MIT",
+  "author": "Figviz <support@figviz.com>",
+  "homepage": "https://figviz.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyjyxt/figviz-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jyjyxt/figviz-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
