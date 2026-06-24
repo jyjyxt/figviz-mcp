@@ -32,7 +32,7 @@ Figviz is pay-as-you-go — no subscription, credits never expire.
 Run it with `npx` (no install needed):
 
 ```bash
-FIGVIZ_API_KEY=fvk_xxx npx -y figviz-mcp
+FIGVIZ_API_KEY=fvk_xxx npx -y @figviz/figviz-mcp
 ```
 
 ### Claude Desktop
@@ -44,7 +44,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "figviz": {
       "command": "npx",
-      "args": ["-y", "figviz-mcp"],
+      "args": ["-y", "@figviz/figviz-mcp"],
       "env": { "FIGVIZ_API_KEY": "fvk_xxx" }
     }
   }
@@ -61,7 +61,7 @@ settings UI):
   "mcpServers": {
     "figviz": {
       "command": "npx",
-      "args": ["-y", "figviz-mcp"],
+      "args": ["-y", "@figviz/figviz-mcp"],
       "env": { "FIGVIZ_API_KEY": "fvk_xxx" }
     }
   }
