@@ -1,5 +1,5 @@
 {
-  "name": "figviz-mcp",
+  "name": "@figviz/figviz-mcp",
   "version": "0.1.0",
   "description": "MCP server for Figviz — generate labeled science & math diagrams (biology, chemistry, physics, K-12 math) from text via the Figviz API.",
   "type": "module",
@@ -11,6 +11,9 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18"
   },
